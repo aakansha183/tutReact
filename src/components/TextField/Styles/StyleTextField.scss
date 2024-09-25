@@ -1,0 +1,52 @@
+.custom-textfield {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .textfield-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .textfield-input {
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+  }
+
+  .textfield-input--error {
+    border-color: red; 
+  }
+
+  .textfield-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  &--small .textfield-input {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+
+  &--medium .textfield-input {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  &--large .textfield-input {
+    padding: 14px 16px;
+    font-size: 18px;
+  }
+}
+
+  

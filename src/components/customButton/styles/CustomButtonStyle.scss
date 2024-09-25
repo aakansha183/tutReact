@@ -1,0 +1,37 @@
+@import 'CustomButtonVariables';
+
+.custom-button {
+    border-radius: $border-radius;
+
+    &.primary {
+        @include button-colors($primary-color, $primary-hover-color, $text-color-white);
+    }
+
+    &.secondary {
+        @include button-colors($secondary-color, $secondary-hover-color, $text-color-white);
+    }
+
+    &.small {
+        @include padding-size($padding-small);
+        @include font-size($font-size-small);
+    }
+
+    &.medium {
+        @include padding-size($padding-medium);
+        @include font-size($font-size-medium);
+    }
+
+    &.large {
+        @include padding-size($padding-large);
+        @include font-size($font-size-large);
+    }
+    &.link {
+        background: none;
+        color: $link-color;
+        padding: 0;
+        &:hover {
+            text-decoration: underline;
+            color: $link-hover-color;
+        }
+    }
+}
